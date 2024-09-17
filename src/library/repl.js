@@ -24,6 +24,7 @@ while (true) {
 	var last_cmd_value;
 
 	try {
+		last_cmd_value = undefined;
 		last_cmd_value = eval(current_cmd);
 	} catch (err) {
 		term.println2(err.message);
